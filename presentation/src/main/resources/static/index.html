@@ -66,13 +66,13 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
         <section>
-            <h1>Cross Site Request Frogery</h1>
+            <h1>Cross Site Request Forgery</h1>
             <h3>OWASP #8</h3>
         </section>
         <section>
             <h2>Time to visit the bank!</h2>
             <p>
-                http://yourbankaccount
+            <a href="http://localhost:8888/login">yourBank.com/login</a>
             </p>
         </section>
         <section>
@@ -81,21 +81,28 @@
             </p>
         </section>
         <section>
+            <p style="text-align: left;">
+              From: "roy"@thoughtworks.com
+              <br>
+              To: me@thoughtworks.com
+              <br>
+              <br>
+              Check out my <a href="/cats.html" target="cats">AWESOME CAT PICS</a>
+            </p>
+        </section>
+        <section>
             <h2>Back to the bank...</h2>
             <p><img src="http://images.clipartpanda.com/no-money-sign-clip-art-dollar-sign1.jpg"></p>
         </section>
         <section>
             <h2>What happened?</h2>
-            <p><code>
-                &lt;img src="xxx" &gt;
-            </code></p>
         </section>
         <section>
             <h2>What is CSRF?</h2>
         </section>
         <section>
             <h2>What is CSRF?</h2>
-            <p>Cross Site Request Forgery: using the existing browser session to perform a privileged operation the user doesn't intend or expect.</p>
+            <p>Cross Site Request Forgery: taking advantage of a user's browser session to perform an action as the user.</p>
         </section>
         <section>
             <h2>Defending Against CSRF</h2>
@@ -103,12 +110,12 @@
                 <li>Tokenizer pattern</li>
                 <li>Built in CSRF protection is included in many frameworks</li>
                 <li>Double submission</li>
-                <li>Avoid POST, GET for modifying operations</li>
             </ul>
         </section>
 
         <section>
             <h2>Fix it!</h2>
+            <p>github.com/danniyu/csrf-presentation</p>
             <aside class="notes">
 
             </aside>
