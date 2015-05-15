@@ -2,11 +2,15 @@
 
 A presentation and sample app on CSRF defense and mitigation.
 
+This is an adaptation of https://github.com/jacksingleton/csrf-presentation
+
 ## Requirements ##
 - Java 7
 - Maven
 - Gradle
 - Chrome
+
+(Yes, this uses both Gradle and Maven right now)
 
 ## Setting up ##
 - Make sure Java 7 is first on your classpath.
